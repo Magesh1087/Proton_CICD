@@ -21,8 +21,8 @@ infrastructure:
           
           # provision, storing state in an s3 bucket using the proton environment.service.instance as the key
           - terraform fmt
-          - terraform plan
           - terraform init
+          - terraform plan
           - terraform apply 
           #
           # pass terraform output to proton
