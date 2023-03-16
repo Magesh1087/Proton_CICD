@@ -1,7 +1,7 @@
 # This is a workflow created to run based on a commit made by AWS Proton
 # It only works if there is only one resource modified as part of the commit.
 
-name: 'proton-runs'
+name: 'proton-run'
 
 on:
   pull_request:
