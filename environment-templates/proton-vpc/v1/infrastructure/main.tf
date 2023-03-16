@@ -1,6 +1,6 @@
 terraform {
   required_version = ">= 0.14"
-  
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -12,9 +12,7 @@ terraform {
  
 provider "aws" {
     region  = "eu-west-1"
-    assume_role {
-        role_arn    = "arn:aws:iam::842814951080:role/service-role/code_build_Proton"
-    }
+    
 }
 
 #Creating AWS VPC for Public/Private
