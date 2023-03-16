@@ -121,7 +121,7 @@ count = length(var.worker_subnet_cidrs)
 resource "aws_security_group" "openshift-vpc" {
   name        = "Openshift_${var.network_tag_prefix}-SecurityGroup"
   description = "Default security group that allows all instances in the VPC to talk to each other over any port and protocol."
-  vpc_id      = aws_vpc.cosaws-vpc.id
+  vpc_id      = aws_vpc.pubpvt-vpc.id
   ingress {
     from_port = "0"
     to_port   = "0"
