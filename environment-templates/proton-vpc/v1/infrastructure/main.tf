@@ -110,7 +110,7 @@ resource "aws_route_table" "worker_rt" {
   }
 }
 
-Associating subnet to Worker Routetable
+#Associating subnet to Worker Routetable
 resource "aws_route_table_association" "private_subnet_asso" {
 count = length(var.worker_subnet_cidrs)
  subnet_id      = element(aws_subnet.worker_sub[*].id, count.index)
