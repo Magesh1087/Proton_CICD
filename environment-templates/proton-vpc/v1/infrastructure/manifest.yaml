@@ -40,4 +40,4 @@ infrastructure:
 
           # destroy environment
           - terraform init
-          - terraform destroy
+          - terraform destroy -auto-approve
