@@ -21,7 +21,7 @@ variable "master_subnet_cidrs" {
 variable "azs" {
  type        = list(string)
  description = "Availability Zones"
- default     = ["eu-west-2a", "eu-west-2b", "eu-west-2c"]
+ default     = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
 }
 
 variable "worker_subnet_cidrs" {
