@@ -23,7 +23,7 @@ infrastructure:
           - terraform fmt
           - terraform init
           - terraform plan
-          - terraform apply 
+          - terraform apply -auto-approve
           #
           # pass terraform output to proton
           - chmod +x ./output.sh && ./output.sh
