@@ -26,7 +26,7 @@ infrastructure:
           - terraform apply -auto-approve
           #
           # pass terraform output to proton
-          - chmod +x ./output.sh && ./output.sh
+          #- chmod +x ./output.sh && ./output.sh
 
         deprovision:
           # install terraform cli
